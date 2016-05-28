@@ -44,6 +44,7 @@ def test_consume_3():
     assert lines == 1
     
 def test_consume_4():
+    # duplicate test, to demonstrate how push to Github starts build
     # check something tricky: whitespace at beginning & end of line
     testfile = _make_testfile('sometext.txt', ' a b c ee')
     chars, words, lines = wordcount_lib.consume(testfile)
